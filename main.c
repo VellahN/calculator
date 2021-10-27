@@ -1,19 +1,55 @@
+/* create a calculator program that will accept two numbers and compute the sum,difference,product,quotient and modules of the two numbers
+
+   inputs:
+       num1,num2
+
+   outputs:
+       sum
+       diff
+       pro
+       quot
+       mod
+
+       computation:
+       sum = num1 + num2;
+       diff = num1 - num2;
+       pro = num1 * num2;
+       quot = num1 / num2;
+       mode = num1 % num2;
+       */
+
 #include <stdio.h>
 #include <stdlib.h>
 
 int main()
 {
-    printf("LIBRARY SERVICES\n");
 
-    printf("What would you like to do\n");
+    // Variable declaration
 
-    printf("1.Sign up\n");
+    int num1,num2,sum,diff,pro,mod;
+    float quot;
 
-    printf("2.Sign in\n");
+    // Assignment
+    num1 = 600;
+    num2 = 100;
 
-    printf("3.Add Book in your shelf\n");
+    // Computations
+    sum = num1 + num2;
+    diff = num1 - num2;
+    pro = num1 * num2;
+    quot = (float)num1 / num2;
+    mod = num1 % num2;
 
-    printf("4.Purchase a book");
+    // Output
+
+    // sum:result
+    //3+5=8
+
+    printf("%d + %d = %d\n",num1,num2,sum);
+    printf("%d - %d = %d\n",num1,num2,diff);
+    printf("%d * %d = %d\n",num1,num2,pro);
+    printf("%d / %d = %f\n",num1,num2,quot);
+    printf("%d mod %d = %d\n",num1,num2,mod);
 
     return 0;
 }
